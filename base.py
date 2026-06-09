@@ -199,14 +199,3 @@ class Widget(QWidget):
     def updateDisplay(self):
         self.wpmDisplay.setText(f"Raw: {self.textBox.wpmRaw:.0f}")
         self.timeDisplay.setText(f"Time: {self.textBox.testDurationSecs:.1f}")
-
-# App exec
-dark_mode = Palette()
-app = QApplication(sys.argv)
-app.setStyle("Fusion")
-app.setPalette(dark_mode)
-baseGUI = Main()
-parentWidget = Widget()
-baseGUI.setCentralWidget(parentWidget)
-baseGUI.show()
-app.exec()

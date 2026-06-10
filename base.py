@@ -56,7 +56,7 @@ class textParagraph(QTextEdit):
 # Mostly logic
     def startTest(self):
         # Random words display
-        wordsGen = generate(5)
+        wordsGen = generate(50)
         strings = " ".join(wordsGen)
         rawStrings = "".join(wordsGen)
         # Raw amount of characters
